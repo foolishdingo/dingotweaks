@@ -1,0 +1,100 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<style>
+    .arkera-hero { position: relative; overflow: hidden; }
+    .arkera-hero img {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: 0;
+    }
+    .arkera-hero-text { position: relative; z-index: 1; }
+</style>
+
+<!-- Hero Banner -->
+<div class="arkera-hero">
+    <img src="https://www.figma.com/api/mcp/asset/ca777cac-9507-4bf9-9524-e2b50f5f3bf2" alt="Arkera banner" />
+    <div class="arkera-hero-text">
+        <h1>Welcome to Arkera</h1>
+        <p>A virtual world where you become your character.<br />Explore, chat, and express yourself freely.</p>
+    </div>
+</div>
+
+<!-- Main content -->
+<div class="arkera-main">
+
+    <!-- Left: Rooms -->
+    <div class="arkera-featured">
+        <h2>Featured rooms</h2>
+
+        <div class="room-card">
+            <div class="room-thumb" style="background:#2d5a3d;"></div>
+            <div class="room-info">
+                <h3>Foresty room</h3>
+                <span class="room-count">20 / 20 users</span>
+                <span class="badge-nsfw">NSFW</span>
+                <span class="badge-public">Public</span>
+                <p class="room-users">Vipersia, Daemonkey, Gorillamp, Hitmanatee, TravelLeopard, NuttyTerror, DimSage, CopperCub, ImpulsePygmy, FireSparrow, Pyrogre, Gringoblin...</p>
+            </div>
+        </div>
+
+        <div class="room-card">
+            <div class="room-thumb" style="background:#3d4a6b;"></div>
+            <div class="room-info">
+                <h3>Mountainous place</h3>
+                <span class="room-count">10 / 20 users</span>
+                <span class="badge-public">Public</span>
+                <p class="room-users">Vipersia, Daemonkey, Gorillamp, Hitmanatee, TravelLeopard, NuttyTerror, DimSage, CopperCub, ImpulsePygmy, FireSparrow</p>
+            </div>
+        </div>
+
+        <div class="room-card">
+            <div class="room-thumb" style="background:#2d5a3d;"></div>
+            <div class="room-info">
+                <h3>Foresty room</h3>
+                <span class="room-count">20 / 20 users</span>
+                <span class="badge-nsfw">NSFW</span>
+                <span class="badge-public">Public</span>
+                <p class="room-users">Vipersia, Daemonkey, Gorillamp, Hitmanatee, TravelLeopard, NuttyTerror, DimSage, CopperCub, ImpulsePygmy, FireSparrow</p>
+            </div>
+        </div>
+
+        <div class="room-card">
+            <div class="room-thumb" style="background:#3d4a6b;"></div>
+            <div class="room-info">
+                <h3>Mountainous place</h3>
+                <span class="room-count">5 / 20 users</span>
+                <span class="badge-public">Public</span>
+                <p class="room-users">Vipersia, Daemonkey, Gorillamp, Hitmanatee, TravelLeopard</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Right: Sidebar -->
+    <div class="arkera-sidebar">
+
+        <div class="user-card">
+            <div class="user-avatar"></div>
+            <div class="user-info">
+                <strong>ExampleUser</strong>
+                <span>Subscription level: Free</span>
+                <span>Local time: 3:15 pm</span>
+                <span>Server time: 9:15 pm</span>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <h3>News and other important stuff</h3>
+            <p>Welcome to Arkera! Stay tuned for updates, events, and announcements here.</p>
+            <a href="#">Read archive &raquo;</a>
+        </div>
+
+    </div>
+
+</div>

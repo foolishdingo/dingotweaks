@@ -1,0 +1,55 @@
+﻿@page
+@model ARKERATEST1.Pages.ProfileModel
+@{
+    ViewData["Title"] = "User Profile";
+
+    // These are placeholder variables - in the real project these
+    // would come from a database. For now we're hardcoding them!
+    var username = "ExampleUser";
+    var customTitle = "Wanderer of the Void";
+    var joinDate = "January 15, 2025";
+    var pronouns = "they/them";
+    var aboutMe = "Hello! I'm a creature of the stars and lover of all things mystical. You'll find me haunting the forest rooms mostly. Feel free to say hi!";
+    var subscriptionLevel = "Free";
+}
+
+<div class="profile-wrapper">
+
+    <div class="profile-header">
+        <div class="profile-avatar-large"></div>
+        <div class="profile-identity">
+            <h1 class="profile-username">@username</h1>
+            <span class="profile-custom-title">✦ @customTitle ✦</span>
+            <div class="profile-badges">
+                <span class="badge-item">🌟 Early Adopter</span>
+                <span class="badge-item">🎨 Verified Artist</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-body">
+
+        <div class="profile-info-card">
+            <h2>Profile Info</h2>
+            <div class="profile-info-row">
+                <span class="info-label">Subscription</span>
+                <span class="info-value">@subscriptionLevel</span>
+            </div>
+            <div class="profile-info-row">
+                <span class="info-label">Joined</span>
+                <span class="info-value">@joinDate</span>
+            </div>
+            <div class="profile-info-row">
+                <span class="info-label">Pronouns</span>
+                <span class="info-value">@pronouns</span>
+            </div>
+        </div>
+
+        <div class="profile-about-card">
+            <h2>About Me</h2>
+            <p>@aboutMe</p>
+        </div>
+
+    </div>
+
+</div>
